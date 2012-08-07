@@ -1,0 +1,26 @@
+# built application files
+*.apk
+*.ap_
+
+# files for the dex VM
+*.dex
+
+# Java class files
+*.class
+
+bin
+gen
+
+# Local configuration file (sdk path, etc)
+local.properties
+project.properties
+
+# Eclipse project files
+.classpath
+.project
+
+# OSX.gitignore
+.DS_Store
+
+# Windows image file caches
+Thumbs.db 
