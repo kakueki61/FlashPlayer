@@ -17,11 +17,11 @@ public class StructLineStyle {
     
     /**
      * Overrides Object#toString() method.
-     * Returns string value formatted (...) style.
+     * Returns string value formatted (width, color) style.
      */
     @Override
     public String toString() {
-        return "";
+        return "width: " + width + "twip, color: " + color; 
     }
 
     public int getWidth() {

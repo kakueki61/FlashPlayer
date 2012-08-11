@@ -5,18 +5,23 @@ public class StructLineStyleArray {
     private int lineStyleCount;
     
     /** UI16: Extended count of line styles. Only if lineStyleCount = 0xFF */
-    private int styleCountExtended;
+    private int lineStyleCountExtended;
     
     /** Array of line styles. */
     private StructLineStyle[] lineStyles;
     
     /**
      * Overrides Object#toString() method.
-     * Returns string value formatted (...) style.
+     * Returns string value formatted (lineStyleCount, lineStyleCountExtended, content of lineStyles) style.
      */
     @Override
     public String toString() {
-        return "";
+        String lineStylesString = "";
+        for(int i = 0; i < lineStyles.length; i++) {
+            lineStylesString += lineStyles[i].toString() + "\n";
+        }
+        return "LineStyleCount: " + lineStyleCount + ", ExtendedCount: " + lineStyleCountExtended 
+                + "\n" + lineStylesString;
     }
 
     public int getLineStyleCount() {
@@ -28,11 +33,11 @@ public class StructLineStyleArray {
     }
 
     public int getStyleCountExtended() {
-        return styleCountExtended;
+        return lineStyleCountExtended;
     }
 
     public void setStyleCountExtended(int styleCountExtended) {
-        this.styleCountExtended = styleCountExtended;
+        this.lineStyleCountExtended = styleCountExtended;
     }
 
     public StructLineStyle[] getLineStyles() {
