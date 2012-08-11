@@ -13,11 +13,10 @@ public class StructFillStyleArray {
     
     /**
      * Overrides Object#toString() method.
-     * Returns string value formatted (xMin, xMax, yMin, yMax) style.
+     * Returns string value formatted (...) style.
      */
     @Override
     public String toString() {
-        //return "nBits: " + nBits + "\n" + "Rect: " + xMin + ", " + xMax + ", " + yMin + ", " + yMax;
         return "";
     }
 

@@ -3,7 +3,7 @@ package org.kakueki61.swf.lib.model.shape;
 public class StructShapeWithStyle {
     
     private StructFillStyleArray fillStyles;
-    private StructLineStyle lineStlyles;
+    private StructLineStyleArray lineStlyles;
     private int fillBits;
     private int lineBits;
     private StructShapeRecord[] shapeRecordes;
@@ -15,11 +15,10 @@ public class StructShapeWithStyle {
     
     /**
      * Overrides Object#toString() method.
-     * Returns string value formatted (xMin, xMax, yMin, yMax) style.
+     * Returns string value formatted (...) style.
      */
     @Override
     public String toString() {
-        //return "nBits: " + nBits + "\n" + "Rect: " + xMin + ", " + xMax + ", " + yMin + ", " + yMax;
         return "";
     }
 
@@ -31,11 +30,11 @@ public class StructShapeWithStyle {
         this.fillStyles = fillStyles;
     }
 
-    public StructLineStyle getLineStlyles() {
+    public StructLineStyleArray getLineStlyles() {
         return lineStlyles;
     }
 
-    public void setLineStlyles(StructLineStyle lineStlyles) {
+    public void setLineStlyles(StructLineStyleArray lineStlyles) {
         this.lineStlyles = lineStlyles;
     }
 
