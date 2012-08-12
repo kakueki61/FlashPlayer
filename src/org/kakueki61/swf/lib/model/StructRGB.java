@@ -1,7 +1,6 @@
 package org.kakueki61.swf.lib.model;
 
 public class StructRGB {
-    private static final String TAG = StructRGB.class.getSimpleName();
     
     private int red;
     private int green;
