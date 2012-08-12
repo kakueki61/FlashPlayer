@@ -17,7 +17,6 @@ public class PlaceObject2Tag extends Tag {
     /*
      * Defines any fields
      */
-    //TODO ほとんどのやつは1ビットしかないんだからbyte型にすべき？
     private boolean hasClipActions = false;
     private boolean hasClipDepth = false;
     private boolean hasName = false;
